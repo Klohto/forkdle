@@ -8,9 +8,9 @@ var lang =
 		"locale": "en",
 		"other-metadata": "sample json format"
 	},
-    "appname": "Quordle",
+    "appname": "Forkdle",
 	"daily": "Daily",
-    "webaddress": "quordle.com",
+    "webaddress": "forkdle.com",
     "practice": "Practice",
 	"in": "in",
     "hours": "hours",
