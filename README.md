@@ -1,8 +1,11 @@
-# Quordle - Forked version with modified CSS and switched keyboard
+# Quordle - Forked version with modified CSS
 
 Changes:
-* Switched keyboard to Wordle layout
 * Modified font and tweaked CSS
+
+Goal:
+Get as close as possible to https://github.com/louanben/wordle-fr which
+in my opinion superior
 
 HOW TO TRANSLATE IN YOUR LANGUAGE :<br/>  
 1/ In index.html, change the locale in the HTML tag. <br/>
