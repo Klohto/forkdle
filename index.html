@@ -1,100 +1,67 @@
 <!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Quadrus</title>
-    <meta
-      name="description"
-      content="Mettez votre talent à rude épreuve en résolvant simultanément 4 Wordle en même temps ! Vous avez 9 essais pour résoudre les 4 mots. Un nouveau groupe de 4 mots sera disponible chaque jour."
-    />
-    <meta
-      name="keywords"
-      content="Quordle, Dordle, Wordle, word game, puzzle, brain teaser, Quadrus, français"
-    />
-    <meta name="author" content="Guigro" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=no"
-    />
+<html lang="en">
 
-    <!-- FB Meta Tags -->
-    <meta property="og:url" content="https://quadrus.guigro.com" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Quadrus" />
-    <meta
-      property="og:description"
-      content="Mettez votre talent à rude épreuve en résolvant simultanément 4 Wordle en même temps ! Vous avez 9 essais pour résoudre les 4 mots. Un nouveau groupe de 4 mots sera disponible chaque jour."
-    />
-    <meta
-      property="og:image"
-      content="https://quadrus.guigro.com/quadrus-banner-1200.png"
-    />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+<head>
+  <meta charset="UTF-8" />
+  <title>Forkdle</title>
+  <meta name="description" content="Forked version with modified CSS and switched keyboard" />
+  <meta name="keywords" content="Quordle, Dordle, Wordle, word game, puzzle, brain teaser" />
+  <meta name="author" content="klohto" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta property="twitter:domain" content="quadrus.guigro.com" />
+  <!-- FB Meta Tags -->
+  <meta property="og:url" content="https://forkdle.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Forkdle" />
+  <meta property="og:description" content="Forked version with modified CSS and switched keyboard" />
+  <meta property="og:image" content="https://forkdle.com/forkdle-banner-1200.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
-    <meta name="theme-color" content="#111827" />
-    <meta name="color-scheme" content="dark" />
-    <link rel="manifest" href="manifest.json" />
-    <link rel="shortcut icon" sizes="192x192" href="favicon-192.png" />
-    <link rel="shortcut icon" sizes="128x128" href="favicon-128.png" />
-    <link rel="apple-touch-icon" sizes="128x128" href="favicon-128.png" />
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="128x128"
-      href="favicon-128.png"
-    />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5N3HGKPWB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="forkdle.com" />
 
-  gtag('config', 'G-Q5N3HGKPWB');
-</script>
-    <script>
-      if (!String.prototype.endsWith) {
-        String.prototype.endsWith = function(search, this_len) {
-          if (this_len === undefined || this_len > this.length) {
-            this_len = this.length;
-          }
-          return this.substring(this_len - search.length, this_len) === search;
-        };
-      }
-      var quordleInHost = window.location && window.location.host && window.location.host.endsWith("quadrus.guigro.com")
-      if (window.Sentry) {
-        Sentry.onLoad(function() {
-          Sentry.init({
-            dsn: quordleInHost ? "https://cd8139814dd64a07af2a72fe40bed481@o1140342.ingest.sentry.io/6197424" : null,
-            environment: "production",
-            release: "1.4",
-            ignoreErrors: ["ResizeObserver", "instantSearchSDKJSBridgeClearHighlight", "webkitExitFullScreen", "t.flat is not a function"]
-          });
-        });
-      }
-    </script>
-    <script type="module">
-      const defaultLocale = "en";
-      var newLocale = document.documentElement.lang;
-      var newLocalePath = "/assets/lang/" + newLocale + ".js";
-      var addScript = document.createElement('script');
-      addScript.type = "module";
-	    addScript.src = newLocalePath;
-      var head = document.getElementsByTagName("head")[0]
-      head.insertBefore(addScript, head.firstChild);
-    </script>
-    <script type="module" crossorigin src="/assets/index.js"></script>
-    <link rel="modulepreload" href="/assets/vendor.92a689d9.js">
-    <link rel="stylesheet" href="/assets/index.d2346360.css">
-  </head>
-  <body>
-    <noscript>Vous devez activer Javascript pour utiliser cette application.</noscript>
-    <div id="root"></div>
-    
-  </body>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
+  <meta name="theme-color" content="#111827" />
+  <meta name="color-scheme" content="dark" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="shortcut icon" sizes="192x192" href="favicon-192.png" />
+  <link rel="shortcut icon" sizes="128x128" href="favicon-128.png" />
+  <link rel="apple-touch-icon" sizes="128x128" href="favicon-128.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="128x128" href="favicon-128.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <script>
+    if (!String.prototype.endsWith) {
+      String.prototype.endsWith = function (search, this_len) {
+        if (this_len === undefined || this_len > this.length) {
+          this_len = this.length;
+        }
+        return this.substring(this_len - search.length, this_len) === search;
+      };
+    }
+  </script>
+  <script type="module">
+    const defaultLocale = "en";
+    var newLocale = document.documentElement.lang;
+    var newLocalePath = "/assets/lang/" + newLocale + ".js";
+    var addScript = document.createElement('script');
+    addScript.type = "module";
+    addScript.src = newLocalePath;
+    var head = document.getElementsByTagName("head")[0]
+    head.insertBefore(addScript, head.firstChild);
+  </script>
+  <script type="module" crossorigin src="/assets/index.js"></script>
+  <link rel="modulepreload" href="/assets/vendor.92a689d9.js">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body>
+  <noscript>Please enable JavaScript to play Forkdle</noscript>
+  <div id="root"></div>
+
+</body>
+
 </html>

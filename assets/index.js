@@ -61,7 +61,7 @@ import {
     examples,
     rules,
     supporters
-} from "/assets/lang/fr.js";
+} from "/assets/lang/en.js";
 var et = Ke(Fe => {
     const is = function() {
         const s = document.createElement("link").relList;
@@ -227,7 +227,7 @@ var et = Ke(Fe => {
                 darkMode: !0,
                 colorblind: !1,
                 vibration: !0,
-                enterBsReversed: !1,
+                enterBsReversed: !0,
                 keyboardHeight: 1,
                 gameSize: "compact"
             },
